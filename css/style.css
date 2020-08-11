@@ -151,7 +151,7 @@ a {
     color: #3d2514;
     line-height: 70px;
     text-shadow: 4px 4px 4px #fff;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .left-content-title span {
     font-size: 56px;
@@ -383,6 +383,7 @@ a {
     margin: 14px 0;
     width: 90%;
     border: 1px solid #3d3d3d;
+    border-radius: 5px;
 }
 .input-btn {
     font-family: 'AlfaSlabOne-Regular';
