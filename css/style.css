@@ -1,0 +1,441 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ============ Fonts ===========*/
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'AlfaSlabOne-Regular';
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url(../fonts/BebasNeue-Bold.ttf);
+}
+
+/* ========== BURGER MENU ============ */
+.fixed__class {
+    position: fixed;
+}
+.relative__class {
+    position: relative;
+}
+.burger {
+    display: none;
+}
+.burger-menu {
+    width: 40px;
+    height: 26px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-line {
+    width: 100%;
+    height: 4px;
+    background-color: #3d2514;
+}
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.3);
+    transition: visibility 0s linear 0.25s,opacity 0.5s 0s,transform 0.5s;
+    z-index: 999;
+}
+.mobile-menu-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.show-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.close-menu {
+    font-family: 'Montserrat-Bold';
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* ================ HEADER =============== */
+#header {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(../img/back-img.png);
+}
+.header-top {
+    padding: 32px 0;
+    position: relative;
+    z-index: 1;
+}
+.menu {
+    padding-top: 14px;
+}
+.menu_links {
+    font-family: 'BebasNeue-Bold';
+    color: #3d2514;
+    font-size: 20px;
+}
+.menu_links:hover {
+    color: #3d2514;
+}
+.menu_block li {
+    padding-right: 70px;
+}
+.menu_block li:last-child {
+    padding-right: 0;
+}
+.contact-phone {
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+    padding-left: 8px;
+    color: #3d2514;
+}
+.left-content-txt {
+    font-family: 'BebasNeue-Regular';
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3d2514;
+    border: 3px dashed #3d2514;
+    padding: 3px 6px;
+    margin-top: 120px;
+    width: 394px;
+}
+.left-content-title {
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 114px;
+    color: #3d2514;
+    line-height: 70px;
+    text-shadow: 4px 4px 4px #fff;
+    padding-top: 20px;
+}
+.left-content-title span {
+    font-size: 56px;
+}
+.right-content {
+    position: relative;
+}
+.right-content img {
+    position: absolute;
+    top: -100px;
+}
+.price-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #bf2222;
+    position: absolute;
+    bottom: -80px;
+    left: 180px;
+}
+.price {
+    font-family: 'BebasNeue-Bold';
+    font-size: 36px;
+    height: 36px;
+    color: #fff;
+}
+.price-block {
+    border: 3px dashed #fff;
+    border-radius: 50%;
+    padding: 8px 17px;
+}
+.price span {
+    font-size: 16px;
+}
+.only {
+    font-family: 'BebasNeue-Bold';
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+/* ============== section BURGER PHOTOS ================ */
+
+#burger-photos {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.content {
+    padding-top: 40px;
+}
+.burger-photo-block {
+    background-image: url(../img/Burger-image1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    margin: 30px 15px;
+    padding: 15px;
+    min-height: 414px;
+}
+.burger-photo-block2 {
+    background-image: url(../img/Burger-image2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    margin: 30px 0;
+    padding: 15px;
+    min-height: 192px;
+}
+.burger-photo-block3 {
+    background-image: url(../img/Burger-image3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    margin: 30px 0;
+    padding: 15px;
+    min-height: 192px;
+}
+.burger-photos-title {
+    font-family: 'BebasNeue-Bold';
+    font-size: 40px;
+    line-height: 38px;
+    color: #fff;
+}
+.burger-photos-txt {
+    font-family: 'BebasNeue-Bold';
+    font-size: 25px;
+    color: #fff;
+}
+.btn {
+    padding-top: 20px;
+    display: flex;
+}
+.burger-btn {
+    font-family: 'BebasNeue-Bold';
+    font-size: 25px;
+    padding: 10px 25px;
+    background-color: #ffc045;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.burger-btn:focus {
+    outline: none;
+}
+
+/* ============= section CHOOSE BURGER =============== */
+#choose-burger {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fcf8f6;
+}
+.choose-burger-container {
+    padding-top: 16px;
+}
+.title {
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 50px;
+    color: #3d2514;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+.txt {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    color: #3d2514;
+    text-align: center;
+    padding: 0 30px;
+}
+.choose-title {
+    font-family: 'BebasNeue-Bold';
+    font-size: 36px;
+    color: #3d2514;
+}
+.choose-txt {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    color: #3d2514;
+}
+.choose-btn {
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: #bf2222;
+    padding: 8px 22px;
+    margin-top: 8px;
+}
+.choose-btn:focus {
+    outline: none;
+}
+
+/* ============== section DISCOVER =============== */
+#discover {
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+#discover-block {
+    box-shadow: 3px 3px 8px rgb(61, 61, 61);
+    padding: 25px;
+}
+.discover-title {
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 40px;
+    color: #3d2514;
+}
+.discover-txt {
+    font-family: 'BebasNeue-Bold';
+    font-size: 30px;
+    color: #3d3d3d;
+    height: 28px;
+}
+.discover-mini-txt {
+    padding-top: 30px;
+    font-family: 'Montserrat-Regular';
+    font-size: 20px;
+    line-height: 33px;
+}
+.burger__img {
+    width: 100%;
+}
+.btn2 {
+    padding: 0;
+}
+.burger-btn2 {
+    margin: 0;
+}
+
+/* ================ section CONTACTS =============== */
+#contats {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.burger-booking-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.burger-booking-img2 {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+.bottle-img {
+    position: absolute;
+    top: 180px;
+    left: 120px;
+}
+.form-booking {
+    padding-top: 120px;
+}
+.x {
+    padding-bottom: 36px;
+}
+.form-input {
+    padding: 5px 35px;
+    margin: 14px 0;
+    width: 90%;
+    border: 1px solid #3d3d3d;
+}
+.input-btn {
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 16px;
+    color: #fff;
+    background-color: #bf2222;
+    border: 2px solid #bf2222;
+}
+.inputs-item {
+    padding-top: 90px;
+}
+
+/* =============== section FOOTER =============== */
+#footer {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+}
+.footer {
+    background-image: url(../img/footer-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93%;
+}
+.footer-txt {
+    color: #fff;
+}
+.footer-mini-txt {
+    font-family: 'BebasNeue-Regular';
+    font-size: 16px;
+    color: #fff;
+}
+.address-txt {
+    font-family: 'BebasNeue-Bold';
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+.footer-container {
+    padding: 30px;
+    align-items: flex-end;
+}
+.email {
+    padding-top: 10px;
+    padding-left: 140px;
+}
+.address {
+    padding-left: 140px;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 30px 0;
+}
