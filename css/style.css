@@ -218,7 +218,7 @@ a {
     min-height: 414px;
 }
 .burger-photo-block2 {
-    background-image: url(../img/Burger-image2.png);
+    background-image: url(../img/burger-image2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@ a {
     min-height: 192px;
 }
 .burger-photo-block3 {
-    background-image: url(../img/Burger-image3.png);
+    background-image: url(../img/burger-image3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
