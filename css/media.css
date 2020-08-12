@@ -129,7 +129,7 @@
     .left-content-title {
         font-size: 80px;
     }
-    .left-content-title span {
+    .left-content-text {
         font-size: 50px;
     }
     .left-content-txt {
@@ -197,7 +197,7 @@
         font-size: 60px;
         line-height: 55px;
     }
-    .left-content-title span {
+    .left-content-text {
         font-size: 40px;
     }
     .right-content img {
