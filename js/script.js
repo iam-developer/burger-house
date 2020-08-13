@@ -32,12 +32,6 @@ function showAnimation() {
     }
 }
 setTimeout(showAnimation, 800);
-
-function scrollWin() {
-    window.scrollTo(0, 500);
-  }
-  scrollWin();
-
   
 // =============== Scroll to Top ===============
 
