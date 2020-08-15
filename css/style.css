@@ -43,7 +43,6 @@ a {
     width: 40px;
     height: 40px;
     z-index: 9999;
-    padding: 5px;
     text-align: center;
     position: fixed;
     bottom: 15px;
@@ -52,13 +51,13 @@ a {
     display: none;
 }
 #toTop p {
-    background: linear-gradient(to bottom, rgb(243, 213, 77), rgb(143, 117, 1));
+    background: linear-gradient(to bottom, rgb(248, 228, 139), rgb(143, 117, 1));
     width: 100%;
-    height: 100%;
     text-align: center;
     font-weight: bold;
     border-radius: 6px;
     color: #000;
+    padding: 5px;
     font-size: 18px;
     border: 1px solid rgb(197, 161, 2);
 }
@@ -92,7 +91,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     opacity: 0;
     visibility: hidden;
     transform: scale(1.3);
@@ -210,7 +209,7 @@ a {
     transform: scale(0);
     transition: 0.8s ease 0s;
 }
-.right-content.active__scale {
+.right-content.active__class {
     transform: scale(1);
     transition: 0.8s ease 0.6s;
 }
@@ -271,6 +270,14 @@ a {
     margin: 30px 15px;
     padding: 15px;
     min-height: 414px;
+    opacity: 0;
+    transform: translate(0px, 80px);
+    transition: 0.8s easy 0s;
+}
+.burger-photo-block.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.8s ease 0s;
 }
 .burger-photo-block2 {
     background-image: url(../img/burger-image2.png);
@@ -281,6 +288,14 @@ a {
     margin: 30px 0;
     padding: 15px;
     min-height: 192px;
+    transform: translate(60px, -40px);
+    opacity: 0;
+    transition: 0.7s ease 0s;
+}
+.burger-photo-block2.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.7s ease 0s;
 }
 .burger-photo-block3 {
     background-image: url(../img/burger-image3.png);
@@ -291,6 +306,14 @@ a {
     margin: 30px 0;
     padding: 15px;
     min-height: 192px;
+    transform: translate(60px, 40px);
+    opacity: 0;
+    transition: 0.7s ease 0s;
+}
+.burger-photo-block3.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.7s ease 0s;
 }
 .burger-photos-title {
     font-family: 'BebasNeue-Bold';
@@ -330,6 +353,13 @@ a {
 }
 .choose-burger-container {
     padding-top: 16px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s ease 0s;
+}
+.choose-burger-container.active__class {
+    opacity: 1;
+    transform: scale(1);
 }
 .title {
     font-family: 'AlfaSlabOne-Regular';
@@ -349,11 +379,25 @@ a {
     font-family: 'BebasNeue-Bold';
     font-size: 36px;
     color: #3d2514;
+    transform: translate(0px, 80px);
+    opacity: 0;
+}
+.choose-title.active__class {
+    transform: translate(0px, 00px);
+    opacity: 1;
+    transition: 0.6s ease 0s;
 }
 .choose-txt {
     font-family: 'Montserrat-Regular';
     font-size: 16px;
     color: #3d2514;
+    transform: translate(0px, 80px);
+    opacity: 0;
+}
+.choose-txt.active__class {
+    transform: translate(0px, 00px);
+    opacity: 1;
+    transition: 0.6s ease 0.2s;
 }
 .choose-btn {
     font-family: 'AlfaSlabOne-Regular';
@@ -363,6 +407,13 @@ a {
     background-color: #bf2222;
     padding: 8px 22px;
     margin-top: 8px;
+    transform: translate(0px, 80px);
+    opacity: 0;
+}
+.choose-btn.active__class {
+    transform: translate(0px, 00px);
+    opacity: 1;
+    transition: 0.6s ease 0.4s;
 }
 .choose-btn:focus {
     outline: none;
@@ -377,11 +428,39 @@ a {
 #discover-block {
     box-shadow: 3px 3px 8px rgb(61, 61, 61);
     padding: 25px;
+    overflow: hidden;
 }
 .discover-title {
     font-family: 'AlfaSlabOne-Regular';
     font-size: 40px;
     color: #3d2514;
+}
+.txt11 {
+    opacity: 0;
+    transform: translate(-120%, 0px);
+}
+.txt11.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.8s ease 0.0s;
+}
+.txt22 {
+    opacity: 0;
+    transform: translate(-120%, 0px);
+}
+.txt22.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.8s ease 0.2s;
+}
+.txt33 {
+    opacity: 0;
+    transform: translate(-120%, 0px);
+}
+.txt33.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.8s ease 0.4s;
 }
 .discover-txt {
     font-family: 'BebasNeue-Bold';
@@ -403,8 +482,23 @@ a {
 }
 .burger-btn2 {
     margin: 0;
+    opacity: 0;
+    transform: translate(-120%, 0px);
 }
-
+.burger-btn2.active__class {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.8s ease 0.6s;
+}
+.animation {
+    opacity: 0;
+    transform: scale(0);
+}
+.animation.active__class {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s ease 0.8s;
+}
 /* ================ section CONTACTS =============== */
 #contats {
     width: 100%;
@@ -416,11 +510,25 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transform: scale(0);
+}
+.burger-booking-img.active__class {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s ease 0s;
 }
 .burger-booking-img2 {
     position: absolute;
     bottom: -100px;
     right: 0;
+    opacity: 0;
+    transform: scale(0);
+}
+.burger-booking-img2.active__class {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s ease 0.2s;
 }
 .bottle-img {
     position: absolute;
