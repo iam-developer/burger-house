@@ -397,7 +397,7 @@ a {
 .choose-txt.active__class {
     transform: translate(0px, 00px);
     opacity: 1;
-    transition: 0.6s ease 0.2s;
+    transition: 0.6s ease 0.1s;
 }
 .choose-btn {
     font-family: 'AlfaSlabOne-Regular';
@@ -413,7 +413,7 @@ a {
 .choose-btn.active__class {
     transform: translate(0px, 00px);
     opacity: 1;
-    transition: 0.6s ease 0.4s;
+    transition: 0.6s ease 0.2s;
 }
 .choose-btn:focus {
     outline: none;
